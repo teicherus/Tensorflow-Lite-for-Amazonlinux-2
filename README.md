@@ -1,6 +1,6 @@
-# Python TensorFlow Lite 2.8.0 and for amazonlinux with python 3.9.10
+# Python TensorFlow Lite 2.8.0 for Amazonlinux 2
 
-In this repo everything is provided to create the python dependencies nessessary to use tensorflow lite 2.8.0 with python 3.9.10 on amazonlinux2, including support for aws lambda.
+In this repo everything is provided to create the python dependencies nessessary to use Tensorflow Lite 2.8.0 with Python 3.9.10 on amazonlinux2, including support for aws lambda.
 
 ## Docker
 
