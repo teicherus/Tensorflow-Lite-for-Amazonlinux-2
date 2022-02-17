@@ -51,7 +51,7 @@ Then create this Dockerfile (also available in the repo).
 ```
 ## Commands
 
-You can either build it yourself, or just use my prebuild versions.
+You can either build it yourself, or use my prebuild versions.
 
 ### Build
 
@@ -66,11 +66,13 @@ This is gonna need a lot of ram and some time. Build failed on my work machine w
 
 ### Use prebuild version:
 
-Just clone this repo
+Either clone this repo via
 ```
     git clone https://github.com/teicherus/python_tflite_for_amazonlinux.git
 ```
-and copy the contents of the [site-packages](site-packages) folder to your lambda layer, inside your lambda docker or where you want to use them. 
+or download the latest release from the release page.
+
+Copy the contents of the [site-packages](site-packages) folder to your lambda layer, inside your lambda docker or where you want to use them. 
 
 ## Site-Packages
 
