@@ -1,0 +1,5 @@
+/site-packages/**
+!/site-packages/numpy
+!/site-packages/numpy-*.dist-info
+!/site-packages/tflite_runtime
+!/site-packages/tflite_runtime-*.dist-info
