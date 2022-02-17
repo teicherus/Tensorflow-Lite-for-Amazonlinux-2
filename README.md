@@ -51,6 +51,10 @@ Then create this Dockerfile (also available in the repo).
 ```
 ## Commands
 
+You can either build it yourself, or just use my prebuild versions.
+
+### Build
+
 Run the following commands (or use [build.bat](build.bat) on windows or [build.sh](build.sh) on linux/mac) in the same directory where you created the Dockerfile.
 ```
     docker build -t tflite_amazonlinux .
@@ -58,6 +62,16 @@ Run the following commands (or use [build.bat](build.bat) on windows or [build.s
     docker cp tflite_amazonlinux:/usr/local/lib/python3.9/site-packages .
     docker stop tflite_amazonlinux
 ```
+This is gonna need a lot of ram and some time. Build failed on my work machine with 12gb of ram, but it succeeded on my personal machine with 32gb of ram.
+
+### Use prebuild version:
+
+Just clone this repo
+```
+    git clone https://github.com/teicherus/python_tflite_for_amazonlinux.git
+```
+and copy the contents of the [site-packages](site-packages) folder to your lambda layer, inside your lambda docker or where you want to use them. 
+
 ## Site-Packages
 
 In the directory where you ran the commands there should now be a folder called *site-packages*. In that folder are the correctly compiled tflite python dependencies for amazonlinux. Copy them into your environment in your docker or add them to a lambda layer.

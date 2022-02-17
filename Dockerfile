@@ -3,7 +3,6 @@ ARG amountOfCPUCores=24
 
 FROM amazonlinux
 
-# OpenSSL-devel needed for building cmake
 RUN yum groupinstall -y "Development Tools"
 # OpenSSL needed for building cmake with openssl-Support,
 # which in turn is needed so the tflite build script can download dependencies.
