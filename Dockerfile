@@ -6,7 +6,8 @@ FROM amazonlinux
 RUN yum groupinstall -y "Development Tools"
 # OpenSSL needed for building cmake with openssl-Support,
 # which in turn is needed so the tflite build script can download dependencies.
-# Numpy and libffi installs the development headers needed by tensorflow.
+# Numpy installs the development headers needed by tensorflow.
+# Libffi installs headers needed by python itself.
 RUN yum install -y openssl-devel libffi libffi-devel numpy wget
 
 # Install Python 3.9.10 from source
